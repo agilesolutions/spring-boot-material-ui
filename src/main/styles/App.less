@@ -1,0 +1,79 @@
+
+@color-primary: #C5E1A5;
+@color-secondary: #8BC34A;
+@color-link: #689F38;
+@color-link-visited: #33691E;
+@color-white: #fff;
+@color-grey: #424242;
+@color-light-grey: #cdcdcd;
+
+@space: 20px;
+@space-three-quarter: 15px;
+@space-half: 10px;
+@space-quarter: 5px;
+
+@zindex-base: 1;
+@zindex-overlay: 10;
+@zindex-modal: 20;
+
+html {
+    background-color: #fff;
+    font-family: Roboto, sans-serif;
+
+    &:after {
+        content: "";
+        background: url('./images/background.jpg') no-repeat center center fixed; background-size: cover;
+        opacity: 0.3;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: -1;
+    }
+
+    a {
+        text-decoration: none;
+        color: @color-link;
+
+        &:visited {
+            color: @color-link-visited;
+        }
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        z-index: @zindex-overlay;
+        width: 100%;
+        margin-top: @space;
+        padding: @space;
+        color: @color-white;
+        background-color: @color-secondary;
+        box-shadow: 0 0 1em @color-grey;
+    }
+}
+
+.App {
+    
+    &-info {
+        padding: @space @space-half;
+        text-align: center;
+    }
+}
+
+/* Component Styles */
+
+@import "Address";
+@import "Company";
+@import "Education";
+@import "Person";
+@import "Position";
+@import "Project";
+@import "University";
