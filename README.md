@@ -11,6 +11,12 @@ While this project is in no way what I would consider "production quality" it do
 try to demonstrate more than just the simplistic "hello world" examples. Hopefully you
 will find it of use in getting started with these great Web development platform/frameworks.
 
+## putting behind zuul proxy and filtering
+
+1. [Zuul API Gateway ](https://dzone.com/articles/microservices-communication-zuul-api-gateway-1)
+2. [Router and Filter: Zuul](https://cloud.spring.io/spring-cloud-netflix/multi/multi__router_and_filter_zuul.html#_router_and_filter_zuul)
+3. [Zuul and Cloud security](https://cloud.spring.io/spring-cloud-security/single/spring-cloud-security.html)
+
 ## Installation
 
 ### Dependencies
